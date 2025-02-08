@@ -1,0 +1,63 @@
+/* Ολόκληρο το background σε σκούρο γκρι */
+body {
+    background-color: #121212; /* Σκούρο γκρι */
+    color: white; /* Λευκό κείμενο για αντίθεση */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Τίτλος αριστερά, links δεξιά */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(28, 27, 27, 0.96); /* Ελαφρώς πιο φωτεινό γκρι */
+}
+
+/* Στυλ για τον τίτλο */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Στυλ για το navigation menu */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Στυλ για τα links */
+nav a {
+    text-decoration: none;
+    color: white; !important; /* Για να φαίνονται στο μαύρο background */
+    font-size: 18px;
+}
+nav a:visited {
+    color: white !important;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+/* Κεντρικό περιεχόμενο */
+main {
+    text-align: center;
+    margin-top: 300px;
+    color: white; /* Για να φαίνεται πάνω στο σκούρο background */
+}
+
+/* Shop Now button */
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222222; /* Σκούρο γκρι κουμπί */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid white; /* Λεπτό περίγραμμα για αντίθεση */
+}
+
