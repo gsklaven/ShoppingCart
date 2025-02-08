@@ -3,7 +3,7 @@ body {
     background-color: #121212; /* Σκούρο γκρι */
     color: white; /* Λευκό κείμενο για αντίθεση */
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 /* Header */
@@ -12,12 +12,12 @@ header {
     justify-content: space-between; /* Τίτλος αριστερά, links δεξιά */
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(28, 27, 27, 0.96); /* Ελαφρώς πιο φωτεινό γκρι */
+    background-color: rgba(4, 4, 4, 0.96); /* Ελαφρώς πιο φωτεινό γκρι */
 }
 
 /* Στυλ για τον τίτλο */
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
@@ -25,21 +25,21 @@ header {
 /* Στυλ για το navigation menu */
 nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* Στυλ για τα links */
 nav a {
     text-decoration: none;
     color: white; !important; /* Για να φαίνονται στο μαύρο background */
-    font-size: 18px;
+    font-size: 25px;
 }
 nav a:visited {
     color: white !important;
 }
 
 nav a:hover {
-    color: blueviolet;
+    color: rgba(4, 4, 4, 0.96);
 }
 
 /* Κεντρικό περιεχόμενο */
@@ -47,6 +47,7 @@ main {
     text-align: center;
     margin-top: 300px;
     color: white; /* Για να φαίνεται πάνω στο σκούρο background */
+    font-size: 30px;
 }
 
 /* Shop Now button */
