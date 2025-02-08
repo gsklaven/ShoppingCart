@@ -1,6 +1,41 @@
-/* Ολόκληρο το background σε σκούρο γκρι */
+body::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
+body .circleontop {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
 body {
-    background-color: #121212; /* Σκούρο γκρι */
+    background: linear-gradient(to right, #013220, #2a4d33); /* Dark green gradient */
     color: white; /* Λευκό κείμενο για αντίθεση */
     margin: 0;
     font-family: 'Fredoka', sans-serif;
@@ -12,7 +47,7 @@ header {
     justify-content: space-between; /* Τίτλος αριστερά, links δεξιά */
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(4, 4, 4, 0.96); /* Ελαφρώς πιο φωτεινό γκρι */
+    background: linear-gradient(to right, #000f07, #001c0e); /* Dark green gradient with a hint of black */
 }
 
 /* Στυλ για τον τίτλο */
@@ -54,11 +89,11 @@ main {
 .shop-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #222222; /* Σκούρο γκρι κουμπί */
+    background-color: black; /* Σκούρο γκρι κουμπί */
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid white; /* Λεπτό περίγραμμα για αντίθεση */
+    font-weight: normal;
+    border-radius: 10px;
+    border: 1px solid black; /* Λεπτό περίγραμμα για αντίθεση */
 }
 
