@@ -1,0 +1,134 @@
+body::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
+body .circleontop {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light circular shape */
+    border-radius: 50%;
+    z-index: -1; /* Places it behind the content */
+}
+
+body {
+    background: linear-gradient(to right, #013220, #2a4d33); /* Dark green gradient */
+    color: white; /* Λευκό κείμενο για αντίθεση */
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: end; /* Τίτλος αριστερά, links δεξιά */
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #000f07, #001c0e); /* Dark green gradient with a hint of black */
+}
+
+#shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 αντικείμενα ανά σειρά */
+    gap: 20px; /* Απόσταση μεταξύ αντικειμένων */
+    justify-content: center; /* Κέντρο στη σελίδα */
+    align-items: center; /* Στοίχιση στη μέση */
+    max-width: 600px; /* Περιορισμός πλάτους για ομοιομορφία */
+    margin: 0 auto; /* Κέντρο στη σελίδα */
+    padding: 20px;
+}
+
+.item {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Στυλ για το navigation menu */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* Στυλ για τα links */
+nav a {
+    text-decoration: none;
+    color: white; !important; /* Για να φαίνονται στο μαύρο background */
+    font-size: 25px;
+}
+nav a:visited {
+    color: white !important;
+}
+
+nav a:hover {
+    color: rgba(4, 4, 4, 0.96);
+}
+
+/* Κεντρικό περιεχόμενο */
+main {
+    text-align: center;
+    margin-top: 0px;
+    color: white; /* Για να φαίνεται πάνω στο σκούρο background */
+    font-size: 30px;
+}
+
+/* Shop Now button */
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; /* Σκούρο γκρι κουμπί */
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 10px;
+    border: 1px solid black; /* Λεπτό περίγραμμα για αντίθεση */
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    padding: 8px 12px; /* Μικρότερο padding */
+    font-size: 14px; /* Μικρότερη γραμματοσειρά */
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #1b2d26, #2a6041); /* Σκούρο πράσινο gradient */
+    border: none;
+    border-radius: 20px; /* Ελαφρώς πιο στρογγυλεμένο */
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #277253, #00701a); /* Πιο σκούρο πράσινο */
+    transform: scale(1.05); /* Ελαφρώς μεγαλύτερο στο hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+

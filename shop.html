@@ -8,9 +8,46 @@
     <link rel="stylesheet" href="shop.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-
-
+    <header>
+        <nav>
+            <a href = "http://localhost:63342/ShoppingCart/index.html?_ijt=58p268jbpf3eg036nhdu9emgrn&_ij_reload=RELOAD_ON_SAVE"> Home </a>
+            <a href = "mycart"> <img src="https://cdn-icons-png.flaticon.com/128/891/891407.png"
+                                     width = "33" height = "33" alt="Cart">
+            </a>
+        </nav>
+    </header>
+    <div>
+        <main>
+            <h1>Start shopping!</h1>
+        </main>
+    </div>
+    <div id="shop">
+        <div class="item">
+            <h2>Shoes</h2>
+            <img src="images/shoes.png" alt="Shoes">
+            <p>100€</p>
+            <button onclick="addToCart(1, 'Shoes', 100)">Add to cart</button>
+        </div>
+        <div class="item">
+            <h2>T-Shirt</h2>
+            <img src="images/t-shirt.png" alt="T-Shirt">
+            <p>15€</p>
+            <button onclick="addToCart(2, 'T-Shirt', 15)">Add to cart</button>
+        </div>
+        <div class="item">
+            <h2>Pants</h2>
+            <img src="images/pants.png" alt="Pants">
+            <p>30€</p>
+            <button onclick="addToCart(3, 'Pants', 30)">Add to cart</button>
+        </div>
+        <div class="item">
+            <h2>Shirt</h2>
+            <img src="images/shirt.png" alt= "Shirt">
+            <p>25€</p>
+            <button onclick="addToCart(4, 'Shirt', 25)">Add to cart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+</html>
