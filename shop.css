@@ -132,3 +132,19 @@ button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+#cart-container {
+    position: fixed;
+    top: 10%;
+    right: -300px; /* Αρχικά κρυμμένο */
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: right 0.3s ease-in-out;
+}
+
+#cart-container.active {
+    right: 10px; /* Εμφάνιση καλαθιού */
+}
+
