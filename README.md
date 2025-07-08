@@ -3,4 +3,4 @@
 -----------------------
 
 Demo Shopping Cart website.
-Link [here](https://giorgosskl08.github.io/ShoppingCart/)!
+Link [here](https://gsklaven.github.io/ShoppingCart/#)!
